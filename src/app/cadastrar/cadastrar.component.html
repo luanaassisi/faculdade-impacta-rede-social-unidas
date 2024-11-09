@@ -1,0 +1,53 @@
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mt-5">
+        <form class="form-group">
+          <h2>Cadastre-se:</h2>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <label for="nome">Nome:</label>
+              <input class="form-control" type="text" [(ngModel)]="usuario.nome" placeholder="Nome" id="nome"
+                name="nome">
+            </div>
+            <div class="col-md-6">
+              <label for="email">E-mail:</label>
+              <input class="form-control" type="email" [(ngModel)]="usuario.usuario" placeholder="Email" id="email"
+                name="email">
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-12">
+              <label for="foto">Foto de perfil:</label>
+              <input class="form-control" type="email" [(ngModel)]="usuario.foto" placeholder="Link da foto de perfil"
+                id="foto" name="foto">
+                <p>Insira aqui o link da sua imagem de perfil de qualquer rede social ou
+                  <a href="https://imgur.com/" class="fa " target="_blank">clique aqui para hospedar!</a></p>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-md-6">
+              <section class=""></section>
+              <label for="senha">Senha:</label>
+              <input class="form-control" type="password" (input)="confirmarSenha($event)" placeholder="Senha"
+                id="senha" name="senha">
+            </div>
+            <div class="col-md-6">
+              <label for="confirmsenha">Confirmar Senha:</label>
+              <input class="form-control" type="password" [(ngModel)]="usuario.senha" placeholder="Confirmar senha"
+                id="confirmsenha" name="confirmsenha">
+            </div>
+          </div>
+          <div class="row d-flex">
+            <div class="col-md-6 justify-content-end">
+              <button class="btn btn-success mr-3" type="submit" (click)="cadastrarUsuario()">Cadastrar</button>
+              <!-- <button routerLink="/entrar" class="btn btn-danger mr-4">Cancelar</button> -->
+            </div>
+          </div>
+          <hr class="mb-3">
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,12 @@
+
+nav{
+  background-color: gray;
+}
+
+.fs-16{
+    font-size: 16pt;
+  }
+
+  a{
+    cursor: pointer;
+  }
