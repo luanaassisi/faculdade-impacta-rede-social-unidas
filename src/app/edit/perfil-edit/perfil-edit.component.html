@@ -1,0 +1,48 @@
+<body>
+  <div class="container">
+    <div class="row">
+      <form class="col-md-6 mt-5">
+        <div class="form-group">
+          <h2>Editar perfil:</h2>
+          <hr>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nome">Nome:</label>
+              <input class="form-control" type="text" [(ngModel)]="usuario.nome" placeholder="Nome completo" id="nome"
+                name="nome">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="foto">Link da foto:</label>
+              <input class="form-control" type="email" [(ngModel)]="usuario.foto" placeholder="Link da foto" id="foto"
+                name="foto">
+              <a href="https://imgur.com/" class="fa " target="_blank">Clique aqui para hospedar uma imagem</a>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="foto">Descrição:</label><textarea class="form-control" type="text" name={{usuario.descricao}} id="" cols="10"
+              rows="4" size="1" maxlength="150" id="desc" (keydown)="desc($event)" placeholder={{usuario.descricao}}
+              [(ngModel)]="usuario.descricao"></textarea>
+            <p>Caracteres:{{num}}</p>
+          </div>
+          <div class="form-row ">
+            <div class="form-group col-md-6 ">
+              <label for="senha">Senha:</label><input class="form-control" type="password"
+                (input)="confirmeSenha($event)" placeholder="Senha" id="senha" name="senha">
+            </div>
+            <div class="form-group col-md-6"><label for="confirmsenha">Confirmar senha:</label><input
+                class="form-control" type="password" [(ngModel)]="usuario.senha" placeholder="Confirmar senha"
+                id="confirmsenha" name="confirmsenha">
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="form-group">
+              <button class="btn btn-success mr-4" type="submit" (click)="altUser()">Alterar</button>
+              <a class="btn btn-danger mr-4" routerLink="/inicio">Cancelar</a>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </form>
+    </div>
+  </div>
+</body>

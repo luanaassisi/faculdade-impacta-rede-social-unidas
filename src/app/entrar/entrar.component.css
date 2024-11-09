@@ -1,0 +1,29 @@
+body{
+    background:url("../../assets/img/autumn-flowers-in-bloom.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: cover;
+}
+
+label{
+    margin-top: 2%;
+} 
+
+form {
+    color: rgb(250, 244, 244);
+    background-color: rgba(32, 32, 32, 0.589);
+    font-size: 1.3em;
+    border-radius: 5px;
+    width: 100hv;
+    margin: auto;
+    padding: 20px;
+  }
+  

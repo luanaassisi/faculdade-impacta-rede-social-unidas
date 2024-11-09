@@ -1,0 +1,84 @@
+
+
+a{
+    cursor: pointer;
+}
+
+.bg-inicio {
+    background: url("../../assets/img/autumn-flowers-in-bloom.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+body {
+    background: url("../../assets/img/background_inicio (2).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.menuperfil {
+    height: 37em;
+}
+
+.imgperfil {
+    max-width: 10em;
+    height: 10em;
+    border-radius: 20em;
+}
+
+
+.imgpublicar {
+    width: 3em;
+    height: 3em;
+    border-radius: 5px;
+}
+
+
+.imgpost {
+    width: 2em;
+    height: 1.8em;
+    border-radius: 20em;
+}
+
+textarea {
+    background: rgba(255, 255, 255, 0.473);
+    resize: none;
+    max-width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(62, 13, 13, 0.18);
+
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+
+.inputPostagem {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    height: 3em;
+    width: 70%;
+    border: 1px solid rgba(62, 13, 13, 0.18);
+}
+
+.pesquisaTema {
+    background: rgba(255, 255, 255, 0.473);
+    border-radius: 5px;
+    height: 3em;
+    border: 1px solid rgba(62, 13, 13, 0.18);
+}
+
+
+.descricao {
+    padding: 20px
+}
+
+
+.botao{
+  width: 100%;
+}
